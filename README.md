@@ -7,7 +7,7 @@
 **Client (Web / Mobile Web)**
  ├─ View (UI Components)
  ├─ Presenter (UI Logic)
- └─ Implementation(how the shared contract is recived and used)
+ └─ Implementation (how the shared contract is received and used)
  
 **Shared Contracts**
  ├─ Data transfer objects (how the data looks)
