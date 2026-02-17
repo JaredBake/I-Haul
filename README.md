@@ -5,18 +5,28 @@
 ### Overview
 
 **Client (Web / Mobile Web)**
+
  ├─ View (UI Components)
+ 
  ├─ Presenter (UI Logic)
+ 
  └─ Implementation (how the shared contract is received and used)
+
  
 **Shared Contracts**
+
  ├─ Data transfer objects (how the data looks)
+ 
  ├─ Interface definitions
+ 
  └─ Validation rules (Make sure the data is valid from client to backend)
 
 **Backend**
+
  ├─ API Controllers
+ 
  ├─ Domain Services
+ 
  └─ Database
 
 ## MVP Roles
