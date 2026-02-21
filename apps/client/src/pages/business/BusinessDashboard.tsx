@@ -82,7 +82,7 @@ export function BusinessDashboard() {
 
         <div className="mt-6">
           <Button
-            onClick={() => navigate("/driver/dashboard")}
+            onClick={() => navigate("/driver/profile")}
             variant="outline"
             className="w-full"
           >

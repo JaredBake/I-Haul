@@ -1,14 +1,14 @@
 import { createBrowserRouter } from "react-router-dom";
-import { RootLayout } from "src/components/layouts/RootLayout";
-import { UserTypeSelection } from "src/pages/auth/UserTypeSelection";
-import { Login } from "src/pages/auth/Login";
-import { Signup } from "src/pages/auth/Signup";
-import { DriverDashboard } from "src/pages/driver/DriverDashboard";
-import { DriverEarnings } from "src/pages/driver/DriverEarnings";
-import { DriverProfile } from "src/pages/driver/DriverProfile";
-import { BusinessDashboard } from "src/pages/business/BusinessDashboard";
-import { JobCreation } from "src/pages/business/JobCreation";
-import { BusinessProfile } from "src/pages/business/BusinessProfile";
+import { RootLayout } from "@/components/layouts/RootLayout";
+import { UserTypeSelection } from "@/pages/auth/UserTypeSelection";
+import { Login } from "@/pages/auth/Login";
+import { Signup } from "@/pages/auth/Signup";
+import { DriverDashboard } from "@/pages/driver/DriverDashboard";
+import { DriverEarnings } from "@/pages/driver/DriverEarnings";
+import { DriverProfile } from "@/pages/driver/DriverProfile";
+import { BusinessDashboard } from "@/pages/business/BusinessDashboard";
+import { JobCreation } from "@/pages/business/JobCreation";
+import { BusinessProfile } from "@/pages/business/BusinessProfile";
 
 export const router = createBrowserRouter([
   {
