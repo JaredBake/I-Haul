@@ -8,17 +8,17 @@ import {
   TrendingUp,
   User,
 } from "lucide-react";
-import { JobCard, Job } from "../../components/JobCard";
-import { Input } from "../../components/ui/Input";
-import { Badge } from "../../components/ui/Badge";
-import { Card } from "../../components/ui/Card";
+import { JobCard, Job } from "@/components/JobCard";
+import { Input } from "@/components/ui/Input";
+import { Badge } from "@/components/ui/Badge";
+import { Card } from "@/components/ui/Card";
 import {
   Dialog,
   DialogContent,
   DialogHeader,
   DialogTitle,
-} from "../../components/ui/Dialog";
-import { Button } from "../../components/ui/Button";
+} from "@/components/ui/Dialog";
+import { Button } from "@/components/ui/Button";
 
 // Mock data
 const mockJobs: Job[] = [

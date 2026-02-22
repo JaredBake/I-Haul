@@ -1,6 +1,6 @@
 import { useNavigate } from "react-router-dom";
 import { Building2, Truck } from "lucide-react";
-import { Card } from "../../components/ui/Card";
+import { Card } from "@/components/ui/Card";
 
 export function UserTypeSelection() {
   const navigate = useNavigate();

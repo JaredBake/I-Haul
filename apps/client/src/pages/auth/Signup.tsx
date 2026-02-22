@@ -1,10 +1,10 @@
 import { useState } from "react";
 import { useNavigate, useSearchParams } from "react-router-dom";
 import { Building2, Truck, Mail, Lock, User } from "lucide-react";
-import { Card } from "../../components/ui/Card";
-import { Input } from "../../components/ui/Input";
-import { Label } from "../../components/ui/Label";
-import { Button } from "../../components/ui/Button";
+import { Card } from "@/components/ui/Card";
+import { Input } from "@/components/ui/Input";
+import { Label } from "@/components/ui/Label";
+import { Button } from "@/components/ui/Button";
 
 export function Signup() {
   const navigate = useNavigate();
