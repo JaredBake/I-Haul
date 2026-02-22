@@ -80,6 +80,7 @@ export function JobCreation() {
             <button
               onClick={handleBack}
               className="p-2 hover:bg-gray-100 rounded-lg"
+              aria-label="Back"
             >
               <ArrowLeft className="w-6 h-6 text-gray-700" />
             </button>

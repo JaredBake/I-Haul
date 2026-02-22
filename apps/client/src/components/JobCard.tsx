@@ -52,11 +52,8 @@ export function JobCard({
 }: JobCardProps) {
   const statusInfo = statusConfig[job.status];
 
-  return (
-    <Card
-      className="p-4 cursor-pointer hover:shadow-lg transition-shadow border border-gray-200 bg-white rounded-lg"
-      onClick={onClick}
-    >
+  const cardContent = (
+    <>
       {/* Header: Price + Date/Time + Status */}
       <div className="flex items-start justify-between mb-4">
         <div>
@@ -153,6 +150,28 @@ export function JobCard({
           {actionLabel}
         </button>
       )}
+    </>
+  );
+
+  // If onClick is provided, wrap the card in a button for accessibility
+  if (onClick) {
+    return (
+      <button
+        type="button"
+        className="w-full text-left focus:outline-none focus-visible:ring-2 focus-visible:ring-[#2563EB] focus-visible:ring-offset-2 rounded-lg"
+        onClick={onClick}
+      >
+        <Card className="p-4 cursor-pointer hover:shadow-lg transition-shadow border border-gray-200 bg-white rounded-lg">
+          {cardContent}
+        </Card>
+      </button>
+    );
+  }
+
+  // Otherwise, render as a non-interactive card
+  return (
+    <Card className="p-4 border border-gray-200 bg-white rounded-lg">
+      {cardContent}
     </Card>
   );
 }
