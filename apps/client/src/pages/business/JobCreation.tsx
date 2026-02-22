@@ -1,11 +1,11 @@
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { ArrowLeft, MapPin, Calendar, Package, DollarSign } from "lucide-react";
-import { Card } from "../../components/ui/Card";
-import { Button } from "../../components/ui/Button";
-import { Input } from "../../components/ui/Input";
-import { Label } from "../../components/ui/Label";
-import { Textarea } from "../../components/ui/Textarea";
+import { Card } from "@/components/ui/Card";
+import { Button } from "@/components/ui/Button";
+import { Input } from "@/components/ui/Input";
+import { Label } from "@/components/ui/Label";
+import { Textarea } from "@/components/ui/Textarea";
 
 const steps = [
   { id: 1, title: "Locations" },

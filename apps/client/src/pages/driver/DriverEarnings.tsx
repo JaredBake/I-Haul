@@ -1,5 +1,5 @@
 import { useNavigate } from "react-router-dom";
-import { Card } from "../../components/ui/Card";
+import { Card } from "@/components/ui/Card";
 
 export function DriverEarnings() {
   const navigate = useNavigate();

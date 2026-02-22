@@ -1,4 +1,4 @@
-import App from "./App.tsx";
-import "./styles/index.css";
+import App from "@/App.tsx";
+import "@/styles/index.css";
 
 export default App;
