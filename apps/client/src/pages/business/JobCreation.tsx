@@ -434,7 +434,11 @@ export function JobCreation() {
                           if (!year || !month || !day) {
                             return formData.date;
                           }
-                          return new Date(year, month - 1, day).toLocaleDateString();
+                          return new Date(
+                            year,
+                            month - 1,
+                            day,
+                          ).toLocaleDateString();
                         })()}{" "}
                       at {formData.time}
                     </span>
