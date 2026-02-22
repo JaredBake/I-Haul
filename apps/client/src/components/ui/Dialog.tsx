@@ -80,9 +80,12 @@ const DialogContent = React.forwardRef<HTMLDivElement, DialogContentProps>(
         <div
           className="fixed inset-0 bg-black/50 z-40"
           onClick={() => setOpen(false)}
+          aria-hidden="true"
         />
         <div
           ref={ref}
+          role="dialog"
+          aria-modal="true"
           className={cn(
             "fixed left-1/2 top-1/2 z-50 w-full max-w-lg -translate-x-1/2 -translate-y-1/2",
             "rounded-lg border border-gray-200 bg-white shadow-lg p-6",
@@ -93,6 +96,7 @@ const DialogContent = React.forwardRef<HTMLDivElement, DialogContentProps>(
           <button
             onClick={() => setOpen(false)}
             className="absolute right-4 top-4 p-1 hover:bg-gray-100 rounded"
+            aria-label="Close dialog"
           >
             <X className="h-4 w-4" />
           </button>

@@ -84,7 +84,7 @@ export function DriverDashboard() {
 
   const handleAcceptJob = (job: Job) => {
     setActiveJob(job);
-    setJobs(jobs.filter((j) => j.id !== job.id));
+    setJobs((prevJobs) => prevJobs.filter((j) => j.id !== job.id));
     setSelectedJob(null);
     alert("Job accepted! Navigate to start your trip.");
   };
@@ -130,12 +130,14 @@ export function DriverDashboard() {
               <button
                 onClick={() => navigate("/driver/earnings")}
                 className="p-2 hover:bg-gray-100 rounded-lg"
+                aria-label="View earnings"
               >
                 <DollarSign className="w-6 h-6 text-gray-700" />
               </button>
               <button
                 onClick={() => navigate("/driver/profile")}
                 className="p-2 hover:bg-gray-100 rounded-lg"
+                aria-label="View profile"
               >
                 <User className="w-6 h-6 text-gray-700" />
               </button>

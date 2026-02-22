@@ -427,7 +427,15 @@ export function JobCreation() {
                     <span className="text-gray-600">Schedule</span>
                     <span className="text-gray-900">
                       {formData.date &&
-                        new Date(formData.date).toLocaleDateString()}{" "}
+                        (() => {
+                          const [year, month, day] = formData.date
+                            .split("-")
+                            .map(Number);
+                          if (!year || !month || !day) {
+                            return formData.date;
+                          }
+                          return new Date(year, month - 1, day).toLocaleDateString();
+                        })()}{" "}
                       at {formData.time}
                     </span>
                   </div>
